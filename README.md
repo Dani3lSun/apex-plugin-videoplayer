@@ -1,16 +1,16 @@
-#Oracle APEX Region Plugin - Video Player
+# Oracle APEX Region Plugin - Video Player
 HTML5 Video Player. Region Plugin using OpenSource JS framework "video.js" to display HTML5 videos.
 
 video.js (https://github.com/videojs/video.js)
 
-##Changelog
+## Changelog
 ####1.0.0 - Initial Release
 
-##Install
+## Install
 - Import plugin file "region_type_plugin_de_danielh_videoplayer" from source directory into your application
 - (Optional) Deploy the CSS/JS files from "server" directory on your webserver and change the "File Prefix" to webservers folder.
 
-##Plugin Settings
+## Plugin Settings
 The plugin settings are highly customizable and you can change:
 - **Width** - Width of video player in pixels
 - **Height** - Height of video player in pixels
@@ -28,10 +28,10 @@ The plugin settings are highly customizable and you can change:
 - **Alt. Mime Type Column** - Column of SQL query which contains the alternative mime type of the video file
 - **Logging** - Whether to log events in the console
 
-##Plugin Events
+## Plugin Events
 - **APEX Video ended** - DA event to do things when a video ends
 
-####Example SQL Query:
+#### Example SQL Query:
 ```language-sql
 SELECT video_url (VARCHAR2),
        poster_url (VARCHAR2),
@@ -47,9 +47,9 @@ SELECT '/web/path/to/my/video.mp4' AS video_url,
        'video/webm' AS alternative_mime_type
 FROM dual
 ```
-##Demo Application
+## Demo Application
 https://apex.oracle.com/pls/apex/f?p=APEXPLUGIN
 
-##Preview
+## Preview
 ![](https://raw.githubusercontent.com/Dani3lSun/apex-plugin-videoplayer/master/preview.gif)
 ---
